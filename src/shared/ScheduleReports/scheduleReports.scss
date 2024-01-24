@@ -1,0 +1,34 @@
+.reset_modal {
+    .applied-days-flex {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .rounded-days {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .modal_btn_wrapper{
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+    }
+    .ant-input-textarea {
+      textarea {
+        // color: #A0ACBB !important;
+        border-radius: 2px;
+      }
+    }
+    .ant-select-selector {
+      .ant-select-selection-item {
+        // color: #A0ACBB;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }

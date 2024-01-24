@@ -1,0 +1,79 @@
+.inviteUserModal {
+  .ant-modal-content {
+    border-radius: 4px !important;
+    overflow-x: auto;
+    overflow-x: hidden;
+    height: 700px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fe5c36;
+  }
+
+  .wrapper-add-email {
+    position: relative;
+    .ant-select-selector {
+      padding-right: 20px;
+    }
+    .inner-img-email-fld {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+    }
+  }
+  .ant-select-multiple .ant-select-selection-search-input {
+    border: none !important;
+  }
+}
+.invite-user-modal-member-and-project {
+  border: 1px solid #d9d9d9;
+  min-height: 120px;
+  max-width: 514px;
+  margin-block: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    border: 1px solid #fe5c36 !important;
+  }
+}
+.projects-checkboxes {
+  margin-block: 25px;
+  .ant-checkbox-group {
+    
+    flex-wrap: wrap;
+    gap: 12px;
+    white-space: nowrap;
+    display: flex;
+    .ant-checkbox-wrapper {
+      flex-basis: 28%;
+      margin: 0;
+
+      // for checkboxes alignement if name is big
+      span:not([class]) {
+          width: 95px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding-left: 16px;
+        }
+      
+    }
+       
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+.addMoreProject {
+  .ant-pagination {
+    display: flex;
+    margin: 20px 0 30px 0px;
+    li:first-child {
+      flex: 1 1 0;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.invitation-status-modal {
+  .ant-table-cell,
+  th.ant-table-cell {
+    color: white !important;
+  }
+  td.ant-table-cell:nth-child(2) {
+    color: var(--title-color) !important;
+  }
+  td.ant-table-cell:last-child {
+    cursor: pointer;
+  }
+  .ant-modal .ant-modal-header {
+    background-color: var(--white-dark-bg) !important;
+  }
+  .wrapper-invitation-status-table {
+    .ant-table {
+      background-color: var(--card-bg-color) !important;
+    }
+    .ant-table-thead {
+      tr,
+      th {
+        // background-color: var(--card-bg-color) !important;
+        background-color: var(--invitation-status-table-bg-color) !important;
+        // color: var(--title-color) !important;
+        color: #fff !important;
+        font-weight: 600;
+        border-color: none !important;
+        border-bottom: none !important;
+      }
+      .ant-table-cell {
+        background-color: var(--invitation-status-table-bg-color) !important;
+        // color: var(--title-color) !important;
+        color: #fff !important;
+        padding: 20px !important;
+        &::before {
+          // background-color: var(--inverted-theme-bg) !important;
+          background-color: #fff !important;
+        }
+      }
+    }
+    .ant-table-content {
+      box-shadow: var(--table-box-shadow) !important;
+      border-radius: 8px;
+      .ant-table-cell:first-child {
+        background-color: var(--invitation-table-cell-first-child-bg-color) !important;
+        color: #fff !important;
+      }
+      tr:nth-child(even) {
+        background: var(--without-gradient-bg) !important;
+        color: var(--title-color);
+      }
+      tr {
+        font-size: 14px;
+        color: var(--title-color);
+        background: var(--card-bg-color);
+        &.ant-table-row-selected {
+          td {
+            border-bottom: 3px solid #fff !important;
+            background: rgba(231, 111, 81, 0.14) !important;
+          }
+        }
+        // ant-table-cell-row-hover      td {
+        border-color: none !important;
+        border-bottom: none !important;
+        &.ant-table-cell-row-hover {
+          background: unset;
+        }
+        &:first-child {
+          border-left: 4px solid transparent;
+          color: #fff !important;
+        }
+      }
+      &:hover td {
+        background: unset !important;
+        color: var(--title-color);
+        border-radius: 0px !important;
+      }
+    }
+  }
+  .ant-pagination {
+    margin: 1.625rem 0 0 0 !important;
+    .ant-table-pagination {
+      margin: 1.625rem 0 0 0 !important;
+    }
+    .ant-pagination-mini {
+      margin: 1.625rem 0 0 0 !important;
+    }
+    .ant-pagination-prev {
+      margin-right: 8px;
+    }
+    .ant-pagination-next {
+      margin-left: 8px;
+    }
+    .ant-pagination-disabled {
+      background: #919eab !important;
+      .ant-pagination-item-link {
+        border-color: var(--pagination-border-color);
+        svg {
+          fill: var(--white-color);
+        }
+      }
+    }
+    .ant-pagination-item-link {
+      border-color: var(--pagination-border-color);
+      svg {
+        fill: var(--dark-grey-color);
+      }
+    }
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+      background-color: var(--card-bg-color) !important;
+      border-color: var(--pagination-border-color);
+      a {
+        color: var(--label-color);
+      }
+    }
+    .ant-pagination-item.ant-pagination-item-active {
+      background-color: var(--without-gradient-bg) !important;
+    }
+  }
+
+  .ant-pagination {
+    margin: 1.625rem 0 0 0 !important;
+    .ant-table-pagination {
+      margin: 1.625rem 0 0 0 !important;
+    }
+    .ant-pagination-mini {
+      margin: 1.625rem 0 0 0 !important;
+    }
+    .ant-pagination-prev {
+      margin-right: 8px;
+    }
+    .ant-pagination-next {
+      margin-left: 8px;
+    }
+    .ant-pagination-disabled {
+      background: #919eab !important;
+      .ant-pagination-item-link {
+        border-color: var(--pagination-border-color);
+        svg {
+          fill: var(--white-color);
+        }
+      }
+    }
+    .ant-pagination-item-link {
+      border-color: var(--pagination-border-color);
+      svg {
+        fill: var(--dark-grey-color);
+      }
+    }
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+      background-color: var(--card-bg-color) !important;
+      border-color: var(--pagination-border-color);
+      a {
+        color: var(--label-color);
+      }
+    }
+    .ant-pagination-item.ant-pagination-item-active {
+      background-color: var(--without-gradient-bg) !important;
+    }
+  }
+}
